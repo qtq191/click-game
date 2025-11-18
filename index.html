@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>给朋友的一个小挑战</title>
+    <title>鱼鱼给鹿个一机会吧</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -75,13 +75,13 @@
 </head>
 <body>
 
-    <h1 id="question">今晚这顿饭你请客怎么样？</h1>
+    <h1 id="question">鱼鱼还可以再给鹿存伟一个机会吗</h1>
 
     <div class="container">
         <div class="btn-wrapper">
-            <button id="yesBtn">没问题</button>
+            <button id="yesBtn">好呀！</button>
         </div>
-        <button id="noBtn">下次一定</button>
+        <button id="noBtn">呵呵^_^</button>
     </div>
 
     <script>
@@ -89,20 +89,20 @@
         const noBtn = document.getElementById('noBtn');
         const question = document.getElementById('question');
 
-        // 1. 点击“没问题”后的交互
+        // 1. 点击“好呀！”后的交互
         yesBtn.addEventListener('click', () => {
             // 修改文字
-            question.innerText = "太棒了！我会截图为证！🎉";
+            question.innerText = "太棒了！快来找鹿存伟聊天🎉";
             // 隐藏按钮
             noBtn.style.display = 'none';
-            yesBtn.innerText = "截图发给我吧";
+            yesBtn.innerText = "太棒了！快来找鹿存伟聊天🎉";
             // 简单的背景变色庆祝
             document.body.style.backgroundColor = "#55efc4";
             
-            alert("我就知道你最大方了！");
+            alert("我就知道鱼最好了！");
         });
 
-        // 2. “下次一定”按钮的逃跑逻辑
+        // 2. “呵呵^_^”按钮的逃跑逻辑
         // 电脑端：鼠标移上去就跑
         noBtn.addEventListener('mouseover', moveButton);
         // 手机端：点击的时候跑（因为手机没有鼠标悬停）
@@ -128,4 +128,5 @@
         }
     </script>
 </body>
+
 </html>
